@@ -113,8 +113,22 @@ html body main .center .top .sparkel {
           transform: translateX(-50%);
   z-index: 1;
   opacity: 0;
-  -webkit-animation: final 0.2s 1s ease-in-out forwards;
-          animation: final 0.2s 1s ease-in-out forwards;
+  -webkit-animation: final 1s 0.4s ease-in-out;
+          animation: final 1s 0.4s ease-in-out;
+}
+html body main .center .top .sparke2 {
+  width: 1920px;
+  height: 486px;
+  background: url(../img/sparkel.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation: keep 5s 5s ease-in-out infinite;
+          animation: keep 5s 5s ease-in-out infinite;
 }
 html body main .center .top .logo {
   width: 573px;
@@ -195,7 +209,6 @@ html body main .center .top .inputBox button:hover, html body main .center .top 
           transform: scale(0.9);
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  font-size: 38px;
 }
 html body main .center .top .unionLogo {
   width: 266px;
@@ -221,8 +234,8 @@ html body main .center .bottom .light1 {
   bottom: 191px;
   left: -411px;
   opacity: 0;
-  -webkit-animation: fadeIn 0.2s 0.5s ease-in-out forwards;
-          animation: fadeIn 0.2s 0.5s ease-in-out forwards;
+  -webkit-animation: fadeIn 0.2s ease-in-out forwards;
+          animation: fadeIn 0.2s ease-in-out forwards;
 }
 html body main .center .bottom .light2 {
   width: 1920px;
@@ -234,8 +247,8 @@ html body main .center .bottom .light2 {
   left: -410px;
   z-index: 6;
   opacity: 0;
-  -webkit-animation: fadeIn2 0.5s 0.8s ease-in-out forwards;
-          animation: fadeIn2 0.5s 0.8s ease-in-out forwards;
+  -webkit-animation: fadeIn2 0.5s 0.2s ease-in-out forwards;
+          animation: fadeIn2 0.5s 0.2s ease-in-out forwards;
 }
 html body main .center .bottom .mainObject {
   width: 1446px;
@@ -247,8 +260,8 @@ html body main .center .bottom .mainObject {
   left: 64px;
   z-index: 4;
   opacity: 0;
-  -webkit-animation: show 0.4s 0.9s ease-in-out forwards;
-          animation: show 0.4s 0.9s ease-in-out forwards;
+  -webkit-animation: show 0.4s 0.3s ease-in-out forwards;
+          animation: show 0.4s 0.3s ease-in-out forwards;
 }
 html body main .bg {
   width: 100%;
@@ -332,6 +345,12 @@ html body main .bg {
     top: -970px;
     opacity: 0;
   }
+  80% {
+    -webkit-transform: scale(1) translateX(-50%);
+            transform: scale(1) translateX(-50%);
+    top: 0;
+    opacity: 1;
+  }
   100% {
     -webkit-transform: scale(1) translateX(-50%);
             transform: scale(1) translateX(-50%);
@@ -346,10 +365,68 @@ html body main .bg {
     top: -970px;
     opacity: 0;
   }
+  80% {
+    -webkit-transform: scale(1) translateX(-50%);
+            transform: scale(1) translateX(-50%);
+    top: 0;
+    opacity: 1;
+  }
   100% {
     -webkit-transform: scale(1) translateX(-50%);
             transform: scale(1) translateX(-50%);
     top: 0;
     opacity: 1;
+  }
+}
+@-webkit-keyframes keep {
+  0% {
+    -webkit-transform: scale(0.2) translateX(-50%);
+            transform: scale(0.2) translateX(-50%);
+    top: -970px;
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1) translateX(-50%);
+            transform: scale(1) translateX(-50%);
+    top: 0;
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: scale(1) translateX(-50%);
+            transform: scale(1) translateX(-50%);
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) translateX(-50%);
+            transform: scale(1) translateX(-50%);
+    top: 0;
+    opacity: 0;
+  }
+}
+@keyframes keep {
+  0% {
+    -webkit-transform: scale(0.2) translateX(-50%);
+            transform: scale(0.2) translateX(-50%);
+    top: -970px;
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1) translateX(-50%);
+            transform: scale(1) translateX(-50%);
+    top: 0;
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: scale(1) translateX(-50%);
+            transform: scale(1) translateX(-50%);
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) translateX(-50%);
+            transform: scale(1) translateX(-50%);
+    top: 0;
+    opacity: 0;
   }
 }

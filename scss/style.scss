@@ -102,7 +102,20 @@ html {
                         transform: translateX(-50%);
                         z-index: 1;
                         opacity: 0;
-                        animation: final 0.2s 1s ease-in-out forwards;
+                        animation: final 1s 0.4s ease-in-out ;
+                    }
+    
+                    .sparke2 {
+                        width: 1920px;
+                        height: 486px;
+                        background: url(../img/sparkel.png) no-repeat;
+                        background-size: contain;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 1;
+                        opacity: 0;
+                        animation: keep 5s 5s ease-in-out infinite;
                     }
     
                     .logo {
@@ -178,7 +191,6 @@ html {
                                 box-shadow: 2px 2px 15px rgb(0, 0, 0, 100%);
                                 transform: scale(0.9);
                                 transition: 0.1s;
-                                font-size: 38px;
                             }
                         }
                     }
@@ -209,7 +221,7 @@ html {
                         bottom: 191px;
                         left: -411px;
                         opacity: 0;
-                        animation: fadeIn 0.2s 0.5s ease-in-out forwards;
+                        animation: fadeIn 0.2s ease-in-out forwards;
                     }
     
                     .light2 {
@@ -222,7 +234,7 @@ html {
                         left: -410px;
                         z-index: 6;
                         opacity: 0;
-                        animation: fadeIn2 0.5s 0.8s ease-in-out forwards;
+                        animation: fadeIn2 0.5s 0.2s ease-in-out forwards;
                     }
     
                     .mainObject {
@@ -235,7 +247,7 @@ html {
                         left: 64px;
                         z-index: 4;
                         opacity: 0;
-                        animation: show 0.4s 0.9s ease-in-out forwards;
+                        animation: show 0.4s 0.3s ease-in-out forwards;
                     }
                 }
             }
@@ -295,9 +307,37 @@ html {
         top: -970px;
         opacity: 0;
     }
+    80% {
+        transform: scale(1) translateX(-50%);
+        top: 0;
+        opacity: 1;
+    }
     100% {
         transform: scale(1) translateX(-50%);
         top: 0;
         opacity: 1;
+    }
+}
+
+@keyframes keep {
+    0% {
+        transform: scale(0.2) translateX(-50%);
+        top: -970px;
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1) translateX(-50%);
+        top: 0;
+        opacity: 1;
+    }
+    90% {
+        transform: scale(1) translateX(-50%);
+        top: 0;
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translateX(-50%);
+        top: 0;
+        opacity: 0;
     }
 }
