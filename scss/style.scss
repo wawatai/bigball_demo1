@@ -102,7 +102,7 @@ html {
                         transform: translateX(-50%);
                         z-index: 1;
                         opacity: 0;
-                        animation: final 1s 0.4s ease-in-out ;
+                        animation: keep 3s 0.4s ease-in-out ;
                     }
     
                     .sparke2 {
@@ -301,43 +301,17 @@ html {
     }
 }
 
-@keyframes final {
-    0% {
-        transform: scale(0.2) translateX(-50%);
-        top: -970px;
-        opacity: 0;
-    }
-    80% {
-        transform: scale(1) translateX(-50%);
-        top: 0;
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1) translateX(-50%);
-        top: 0;
-        opacity: 1;
-    }
-}
-
 @keyframes keep {
     0% {
-        transform: scale(0.2) translateX(-50%);
-        top: -970px;
         opacity: 0;
     }
     50% {
-        transform: scale(1) translateX(-50%);
-        top: 0;
         opacity: 1;
     }
     90% {
-        transform: scale(1) translateX(-50%);
-        top: 0;
         opacity: 1;
     }
     100% {
-        transform: scale(1) translateX(-50%);
-        top: 0;
         opacity: 0;
     }
 }
